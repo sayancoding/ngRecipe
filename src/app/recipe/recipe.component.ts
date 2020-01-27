@@ -7,13 +7,11 @@ import { Recipe } from './recipe.model';
   styleUrls: ['./recipe.component.css']
 })
 export class RecipeComponent implements OnInit {
-  @Input() recipe:Recipe
+  selectedRecipes:Recipe
+  text:boolean = false;
   constructor() { }
 
   ngOnInit() {
-  }
-  selectedRecipes(rec)
-  {
-    console.log(rec)
+    
   }
 }
