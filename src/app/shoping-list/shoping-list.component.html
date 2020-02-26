@@ -1,6 +1,9 @@
 <div class="row">
     <div class="col-md-10">
-        <app-shoping-edit></app-shoping-edit>
+        <app-shoping-edit 
+        (ingredientAdded)="onIngredientAdded($event)"
+        >
+        </app-shoping-edit>
         <ul class="list-group">
             <a href="#" class="list-group-item" *ngFor="let ingredient of ingredients">
               {{ingredient.name}} {{ingredient.number}}  
